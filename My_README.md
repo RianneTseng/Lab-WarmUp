@@ -36,7 +36,7 @@
 ### Questions
 
 * What problems you encountered? How you solve it?
-When I tried to infer using the converted model, I encountered an issue where the model only generated special tokens like <s>, ``, and </s>, without producing any meaningful output. I couldn't find any useful information about this problem online. So, I decided to inspect the file I downloaded from Huggingface. I discovered that </s> is the end-of-stream (EOS) token, which causes the prompt to stop as soon as this token is encountered. To address this, I used the "./main -h" command to check the flag settings. Eventually, I found the "--ignore-eos" flag, which ignores the EOS token and allows the generation to continue. After adding this flag to my command, the prompt worked properly.
+When I tried to infer using the converted model, I encountered an issue where the model only generated special tokens like &lt;s> and &lt;/s>, without producing any meaningful output. I couldn't find any useful information about this problem online. So, I decided to inspect the file I downloaded from Huggingface. I discovered that </s> is the end-of-stream (EOS) token, which causes the prompt to stop as soon as this token is encountered. To address this, I used the "./main -h" command to check the flag settings. Eventually, I found the "--ignore-eos" flag, which ignores the EOS token and allows the generation to continue. After adding this flag to my command, the prompt worked properly.
 * What you observed between CPU / GPU performance ?
 The GPU outperforms the CPU for the three model.
 * Will quantization or smaller-parameters model impact model accuracy or inference throughput ? If so , what's the variation?
