@@ -29,9 +29,9 @@
 
 | Throughputs (Tokens/sec)             | Accuracy |
 | ------------------------------------ | -------- |
-| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 5/10     |
-| TinyLlama-1.1B-Chat-v1.0-f16         | 7/10     |
-| TinyLlama-1.1B-Chat-v1.0-Q8          | 8/10     |
+| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 0/10     |
+| TinyLlama-1.1B-Chat-v1.0-f16         | 8/10     |
+| TinyLlama-1.1B-Chat-v1.0-Q8          | 6/10     |
 
 ### Questions
 
@@ -43,5 +43,5 @@ When I tried to infer using the converted model, I encountered an issue where th
 The GPU outperforms the CPU for the three model.
 * Will quantization or smaller-parameters model impact model accuracy or inference throughput ? If so , what's the variation?
   
-Based on the accuracy of the three models, I believe the Q8_0 model generates better output. Although theoretically, the performance should be F16 > Q8_0 > Q4_K_M due to the definitions of these models. This discrepancy is likely because the problem set is not large enough to test the models more precisely.
+Based on the accuracy of the three models, the f16 model generates better output. Theoretically, the performance should be F16 > Q8_0 > Q4_K_M due to the definitions of these models. 
 Another important aspect is, the file size of the F16 model is four times larger than that of the Q4_K_M model. Therefore, when implementing a model, I think it's crucial to consider not only the performance but also the size and runtime of the model.
