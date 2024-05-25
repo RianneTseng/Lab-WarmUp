@@ -5,24 +5,24 @@
 
 | Throughputs (Tokens/sec)             | CPU  | GPU  |
 | ------------------------------------ | ---- | ---- |
-| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 7.72 | 143.77 |
+| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 9.56 | 19.33 |
 
 ### Medium Challenge
 
 
 | Throughputs (Tokens/sec)             | CPU  | GPU  |
 | ------------------------------------ | ---- | ---- |
-| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 7.72 | 143.77 |
-| TinyLlama-1.1B-Chat-v1.0-f16         | 4.19 | 23.28 |
+| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 9.56 | 19.33 |
+| TinyLlama-1.1B-Chat-v1.0-f16         | 4.25 | 11.47 |
 
 ### Advance Challenge
 
 
 | Throughputs (Tokens/sec)             | CPU  | GPU  |
 | ------------------------------------ | ---- | ---- |
-| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 7.72 | 143.77 |
-| TinyLlama-1.1B-Chat-v1.0-f16         | 4.19 | 23.28 |
-| TinyLlama-1.1B-Chat-v1.0-Q8          | 5.78 | 16.96 |
+| tinyllama-1.1b-chat-v0.3.Q4_K_M.gguf | 9.56 | 19.33 |
+| TinyLlama-1.1B-Chat-v1.0-f16         | 4.25 | 11.47 |
+| TinyLlama-1.1B-Chat-v1.0-Q8          | 5.86 | 14.64 |
 
 ### Advance Challenge
 
